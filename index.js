@@ -8,7 +8,7 @@ app.get('/',async function(req,res){
     res.end(data1)
 })
 app.get('/user/signup',async function(req,res){
-    data2=data2.replace(/{{ad}}/,req.query.name)
+    data2=data2.replace(/{{ad}}/g,req.query.name)
     res.end(data2)
 })
 
